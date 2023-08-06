@@ -1,5 +1,5 @@
 // Resource: https://docs.uploadthing.com/nextjs/appdir#creating-your-first-fileroute
-// Above resource shows how to setup uploadthing. Copy paste most of it as it is.
+// Above resource shows how to set up upload-thing. Copy and paste most of it as it is.
 // We're changing a few things in the middleware and configs of the file upload i.e., "media", "maxFileCount"
 
 import { currentUser } from "@clerk/nextjs";
