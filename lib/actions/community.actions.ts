@@ -50,6 +50,7 @@ export async function createCommunity(
   }
 }
 
+
 export async function fetchCommunityDetails(id: string) {
   try {
     connectToDB();
