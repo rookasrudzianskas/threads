@@ -41,9 +41,7 @@ function PostThread({ userId }: Props) {
   const onSubmit = async (values: z.infer<typeof ThreadValidation>) => {
     await createThread({
       text: values.thread,
-      author: userId,
-      communityId: organization ? organization.id : null,
-      path: pathname,
+      author: userId
     });
 
     router.push("/");
@@ -70,11 +68,10 @@ function PostThread({ userId }: Props) {
             </FormItem>
           )}
         />
-
-        <Button type='submit' className='bg-primary-500'>
-          Post Thread
-        </Button>
       </form>
+      <Button type='submit' className='bg-primary-500'>
+        Post Thread
+      </Button>
     </Form>
   );
 }
