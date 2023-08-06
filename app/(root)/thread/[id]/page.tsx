@@ -23,7 +23,16 @@ async function page({ params }: { params: { id: string } }) {
   return (
     <section className='relative'>
       <div>
-
+        <ThreadCard
+          id={thread._id}
+          currentUserId={user.id}
+          parentId={thread.parentId}
+          content={thread.text}
+          author={thread.author}
+          community={thread.community}
+          createdAt={thread.createdAt}
+          comments={thread.children}
+        />
       </div>
     </section>
   );
