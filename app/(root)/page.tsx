@@ -49,11 +49,11 @@ async function Home({
         )}
       </section>
 
-      {/*<Pagination*/}
-      {/*  path='/'*/}
-      {/*  pageNumber={searchParams?.page ? +searchParams.page : 1}*/}
-      {/*  isNext={result.isNext}*/}
-      {/*/>*/}
+      <Pagination
+        path='/'
+        pageNumber={searchParams?.page ? +searchParams.page : 1}
+        isNext={result.isNext}
+      />
     </>
   );
 }
