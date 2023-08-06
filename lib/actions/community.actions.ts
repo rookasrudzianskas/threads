@@ -8,6 +8,7 @@ import User from "../models/user.model";
 
 import { connectToDB } from "../mongoose";
 
+
 export async function createCommunity(
   id: string,
   name: string,
